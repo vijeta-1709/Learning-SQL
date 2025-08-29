@@ -8,3 +8,13 @@ Given a table of candidates and their skills, you're tasked with finding the can
 Write a query to list the candidates who possess all of the required skills for the job. Sort the output by candidate ID in ascending order.
 
 There are no duplicates in the candidates table.
+
+candidate_id	skill
+123	Python
+123	Tableau
+123	PostgreSQL
+234	R
+234	PowerBI
+234	SQL Server
+345	Python
+345	Tableau
