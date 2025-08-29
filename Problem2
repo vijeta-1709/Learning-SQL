@@ -1,0 +1,8 @@
+SELECT p.page_id
+FROM pages AS p
+LEFT JOIN page_likes AS pl
+  ON p.page_id = pl.page_id
+
+GROUP BY p.page_id, pl.liked_date
+HAVING pl.liked_date IS NULL
+ORDER BY p.page_id ASC;
