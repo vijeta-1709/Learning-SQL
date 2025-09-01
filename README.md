@@ -65,3 +65,9 @@ Assume you're given a table containing job postings from various companies on th
 Definition:
 
 Duplicate job listings are defined as two job listings within the same company that share identical titles and descriptions.
+
+
+Problem 9:
+Assume you're given the tables containing completed trade orders and user details in a Robinhood trading system.
+
+Write a query to retrieve the top three cities that have the highest number of completed trade orders listed in descending order. Output the city name and the corresponding number of completed trade orders.
