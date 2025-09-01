@@ -51,3 +51,7 @@ Write a query to identify the top 2 Power Users who sent the highest number of m
 
 Assumption:
 No two users have sent the same number of messages in August 2022.
+
+Problem 7:
+Imagine you have a sales table with columns (id, product, amount).
+You want to first calculate the total sales per product, and then select only products with sales over 100.
