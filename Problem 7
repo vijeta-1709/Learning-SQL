@@ -1,0 +1,8 @@
+WITH product_sales AS (
+  SELECT product, SUM(amount) AS total_sales
+  FROM sales
+  GROUP BY product
+)
+SELECT product, total_sales
+FROM product_sales
+WHERE total_sales > 100;
