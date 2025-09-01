@@ -71,3 +71,8 @@ Problem 9:
 Assume you're given the tables containing completed trade orders and user details in a Robinhood trading system.
 
 Write a query to retrieve the top three cities that have the highest number of completed trade orders listed in descending order. Output the city name and the corresponding number of completed trade orders.
+
+
+Problem 10:
+Given the reviews table, write a query to retrieve the average star rating for each product, grouped by month. The output should display the month as a numerical value, product ID, and average star rating rounded to two decimal places. Sort the output first by month and then by product ID.
+
