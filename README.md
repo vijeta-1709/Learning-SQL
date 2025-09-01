@@ -40,3 +40,7 @@ Problem 4:
 Assume you're given the table on user viewership categorised by device type where the three types are laptop, tablet, and phone.
 
 Write a query that calculates the total viewership for laptops and mobile devices where mobile is defined as the sum of tablet and phone viewership. Output the total viewership for laptops as laptop_reviews and the total viewership for mobile devices as mobile_views.
+
+
+Problem 5:
+Given a table of Facebook posts, for each user who posted at least twice in 2021, write a query to find the number of days between each user’s first post of the year and last post of the year in the year 2021. Output the user and number of the days between each user's first and last post.
