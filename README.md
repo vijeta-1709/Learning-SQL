@@ -76,3 +76,36 @@ Write a query to retrieve the top three cities that have the highest number of c
 Problem 10:
 Given the reviews table, write a query to retrieve the average star rating for each product, grouped by month. The output should display the month as a numerical value, product ID, and average star rating rounded to two decimal places. Sort the output first by month and then by product ID.
 
+
+
+Problem 11:
+Companies often perform salary analyses to ensure fair compensation practices. One useful analysis is to check if there are any employees earning more than their direct managers.
+
+As a HR Analyst, you're asked to identify all employees who earn more than their direct managers. The result should include the employee's ID and name.
+
+employee_id	name	salary	department_id	manager_id
+1	Emma Thompson	3800	1	6
+2	Daniel Rodriguez	2230	1	7
+3	Olivia Smith	7000	1	8
+4	Noah Johnson	6800	2	9
+5	Sophia Martinez	1750	1	11
+6	Liam Brown	13000	3	NULL
+7	Ava Garcia	12500	3	NULL
+8	William Davis	6800	2	NULL
+
+
+Problem 12:
+
+Assume you have an events table on Facebook app analytics. Write a query to calculate the click-through rate (CTR) for the app in 2022 and round the results to 2 decimal places.
+
+Definition and note:
+
+Percentage of click-through rate (CTR) = 100.0 * Number of clicks / Number of impressions
+To avoid integer division, multiply the CTR by 100.0, not 100.
+
+app_id	event_type	timestamp
+123	impression	07/18/2022 11:36:12
+123	impression	07/18/2022 11:37:12
+123	click	07/18/2022 11:37:42
+234	impression	07/18/2022 14:15:12
+234	click	07/18/2022 14:16:12
