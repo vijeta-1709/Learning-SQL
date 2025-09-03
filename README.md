@@ -109,3 +109,23 @@ app_id	event_type	timestamp
 123	click	07/18/2022 11:37:42
 234	impression	07/18/2022 14:15:12
 234	click	07/18/2022 14:16:12
+
+
+
+Problem 13:
+
+Assume you're given tables with information about TikTok user sign-ups and confirmations through email and text. New users on TikTok sign up using their email addresses, and upon sign-up, each user receives a text message confirmation to activate their account.
+
+Write a query to display the user IDs of those who did not confirm their sign-up on the first day, but confirmed on the second day.
+
+Definition:
+
+action_date refers to the date when users activated their accounts and confirmed their sign-up through text messages.
+email_id	user_id	signup_date
+125	7771	06/14/2022 00:00:00
+433	1052	07/09/2022 00:00:00
+
+text_id	email_id	signup_action	action_date
+6878	125	Confirmed	06/14/2022 00:00:00
+6997	433	Not Confirmed	07/09/2022 00:00:00
+7000	433	Confirmed	07/10/2022 00:00:00
