@@ -129,3 +129,22 @@ text_id	email_id	signup_action	action_date
 6878	125	Confirmed	06/14/2022 00:00:00
 6997	433	Not Confirmed	07/09/2022 00:00:00
 7000	433	Confirmed	07/10/2022 00:00:00
+
+
+Problem 14:
+
+IBM is analyzing how their employees are utilizing the Db2 database by tracking the SQL queries executed by their employees. The objective is to generate data to populate a histogram that shows the number of unique queries run by employees during the third quarter of 2023 (July to September). Additionally, it should count the number of employees who did not run any queries during this period.
+
+Display the number of unique queries as histogram categories, along with the count of employees who executed that number of unique queries.
+
+employee_id	query_id	query_starttime	execution_time
+226	856987	07/01/2023 01:04:43	2698
+132	286115	07/01/2023 03:25:12	2705
+221	33683	07/01/2023 04:34:38	91
+240	17745	07/01/2023 14:33:47	2093
+110	413477	07/02/2023 10:55:14	470
+
+employee_id	full_name	gender
+1	Judas Beardon	Male
+2	Lainey Franciotti	Female
+3	Ashbey Strahan	Male
