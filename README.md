@@ -148,3 +148,24 @@ employee_id	full_name	gender
 1	Judas Beardon	Male
 2	Lainey Franciotti	Female
 3	Ashbey Strahan	Male
+
+
+Problem 15:
+
+A Microsoft Azure Supercloud customer is defined as a customer who has purchased at least one product from every product category listed in the products table.
+
+Write a query that identifies the customer IDs of these Supercloud customers.
+customer_id	product_id	amount
+1	1	1000
+1	3	2000
+1	5	1500
+2	2	3000
+2	6	2000
+
+product_id	product_category	product_name
+1	Analytics	Azure Databricks
+2	Analytics	Azure Stream Analytics
+4	Containers	Azure Kubernetes Service
+5	Containers	Azure Service Fabric
+6	Compute	Virtual Machines
+7	Compute	Azure Functions
