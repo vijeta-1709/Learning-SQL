@@ -185,3 +185,20 @@ Chase Freedom Flex	70000	4	2021
 Chase Sapphire Reserve	170000	1	2021
 Chase Sapphire Reserve	175000	2	2021
 Chase Sapphire Reserve	180000	3	2021
+
+
+Problem Compressed Mean
+Alibaba SQL Interview Question:
+
+You're trying to find the mean number of items per order on Alibaba, rounded to 1 decimal place using tables which includes information on the count of items in each order (item_count table) and the corresponding number of orders for each item count (order_occurrences table).
+
+
+Problem Pharmacy Analytics (Part 1)
+CVS Health SQL Interview Question:
+
+CVS Health is trying to better understand its pharmacy sales, and how well different products are selling. Each drug can only be produced by one manufacturer.
+
+Write a query to find the top 3 most profitable drugs sold, and how much profit they made. Assume that there are no ties in the profits. Display the result from the highest to the lowest total profit.
+Definition:
+cogs stands for Cost of Goods Sold which is the direct cost associated with producing the drug.
+Total Profit = Total Sales - Cost of Goods Sold
