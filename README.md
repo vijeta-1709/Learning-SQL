@@ -202,3 +202,27 @@ Write a query to find the top 3 most profitable drugs sold, and how much profit 
 Definition:
 cogs stands for Cost of Goods Sold which is the direct cost associated with producing the drug.
 Total Profit = Total Sales - Cost of Goods Sold
+
+
+
+Problem Pharmacy Analytics (Part 2)
+CVS Health SQL Interview Question:
+
+CVS Health is analyzing its pharmacy sales data, and how well different products are selling in the market. Each drug is exclusively manufactured by a single manufacturer.
+
+Write a query to identify the manufacturers associated with the drugs that resulted in losses for CVS Health and calculate the total amount of losses incurred.
+
+Output the manufacturer's name, the number of drugs associated with losses, and the total losses in absolute value. Display the results sorted in descending order with the highest losses displayed at the top.
+
+
+
+Problem Pharmacy Analytics (Part 3)
+CVS Health SQL Interview Question:
+
+CVS Health wants to gain a clearer understanding of its pharmacy sales and the performance of various products.
+
+Write a query to calculate the total drug sales for each manufacturer. Round the answer to the nearest million and report your results in descending order of total sales. In case of any duplicates, sort them alphabetically by the manufacturer name.
+
+Since this data will be displayed on a dashboard viewed by business stakeholders, please format your results as follows: "$36 million".
+
+
