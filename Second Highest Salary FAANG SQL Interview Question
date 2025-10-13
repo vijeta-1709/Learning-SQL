@@ -1,0 +1,9 @@
+SELECT salary
+FROM
+(
+  SELECT salary,
+    RANK() OVER (ORDER BY salary DESC) AS w_salary
+    FROM employee
+    )
+ AS ranked
+WHERE w_salary = 2;
