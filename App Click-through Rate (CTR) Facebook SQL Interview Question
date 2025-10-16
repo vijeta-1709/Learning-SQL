@@ -1,0 +1,13 @@
+WITH rate AS (
+  SELECT app_id,
+        SUM(CASE WHEN event_type = 'click' THEN 1 ELSE 0 END) AS clicks,
+        SUM(CASE WHEN event_type = 'impression' THEN 1 ELSE 0 END) AS impressions
+  FROM events
+  WHERE timestamp BETWEEN '2022-01-01'
+  AND '2023-01-01'
+  GROUP BY app_id
+)
+
+SELECT app_id, 
+  ROUND((100.0*clicks/impressions), 2) AS ctr
+FROM rate;
