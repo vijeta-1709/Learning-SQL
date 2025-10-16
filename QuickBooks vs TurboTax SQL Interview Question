@@ -1,0 +1,22 @@
+SELECT product,
+       COUNT(*) AS num_transactions
+FROM intuit_transactions
+GROUP BY product
+ORDER BY num_transactions DESC
+LIMIT 1;
+
+
+
+
+-----Using CTE
+
+WITH product_counts AS (
+  SELECT product,
+         COUNT(*) AS num_transactions
+  FROM intuit_transactions
+  GROUP BY product
+)
+SELECT product, num_transactions
+FROM product_counts
+WHERE num_transactions = (SELECT MAX(num_transactions) FROM product_counts);
+
