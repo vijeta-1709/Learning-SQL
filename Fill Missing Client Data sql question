@@ -1,0 +1,9 @@
+SELECT 
+  c.client_id,
+  c.client_name,
+  COALESCE(c.email, ct.email) AS email,
+  COALESCE(c.phone, ct.phone) AS phone,
+  COALESCE(c.address, ct.address) AS address
+FROM clients c
+LEFT JOIN contacts ct
+  ON c.client_id = ct.client_id;
