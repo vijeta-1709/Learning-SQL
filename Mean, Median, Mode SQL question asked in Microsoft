@@ -1,0 +1,20 @@
+WITH mode_table AS (
+    SELECT 
+        department,
+        salary,
+        COUNT(*) AS freq,
+        RANK() OVER (PARTITION BY department ORDER BY COUNT(*) DESC) AS rnk
+    FROM Salaries
+    GROUP BY department, salary
+)
+SELECT 
+    s.department,
+    ROUND(AVG(s.salary), 2) AS mean_salary,
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY s.salary) AS median_salary,
+    m.salary AS mode_salary
+FROM Salaries s
+JOIN mode_table m
+  ON s.department = m.department
+WHERE m.rnk = 1
+GROUP BY s.department, m.salary
+ORDER BY s.department;
