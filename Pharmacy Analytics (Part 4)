@@ -1,0 +1,6 @@
+SELECT 
+    manufacturer,
+    SUM(total_sales - cogs) AS total_profit
+FROM pharmacy_sales
+GROUP BY manufacturer
+ORDER BY total_profit DESC;
