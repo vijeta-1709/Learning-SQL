@@ -1,0 +1,3 @@
+SELECT call_date, COUNT(DISTINCT user_id) AS dau
+FROM calls
+GROUP BY call_date;
