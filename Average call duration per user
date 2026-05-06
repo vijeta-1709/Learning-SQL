@@ -1,0 +1,3 @@
+SELECT user_id, AVG(duration_sec) AS avg_duration
+FROM calls
+GROUP BY user_id;
