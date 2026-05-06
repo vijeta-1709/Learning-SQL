@@ -1,0 +1,4 @@
+SELECT u.user_id
+FROM users u
+LEFT JOIN recharges r ON u.user_id = r.user_id
+WHERE r.user_id IS NULL;
