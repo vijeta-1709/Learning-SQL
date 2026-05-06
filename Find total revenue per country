@@ -1,0 +1,4 @@
+SELECT u.country, SUM(r.amount) AS total_revenue
+FROM users u
+JOIN recharges r ON u.user_id = r.user_id
+GROUP BY u.country;
